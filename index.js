@@ -105,7 +105,7 @@ function parseUnread() {
       
       self.imap.setFlags(results, ['\\Seen'], function (err) {
         if (err) {
-          console.log(JSON.stringify(err, null, 2));
+          // TODO : error
         }
       });
 
